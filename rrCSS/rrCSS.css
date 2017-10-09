@@ -5,8 +5,8 @@
 html {
 	background: #b30000;
 	width: 100%;
-	font-family: 'PT Serif', serif;
 	color: black;
+	font-family: 'Ubuntu', sans-serif;
 }
 
 body {
@@ -17,9 +17,6 @@ a {
 	text-decoration: none;
 }
 
-a:hover {
-}
-
 ul {
 	list-style: none;
 }
@@ -28,49 +25,72 @@ ul {
 /*   ---    Header & Navigation   ---   */
 
 header {
-	background: white;
+	background: #efffff;
 }
 
 #logo {
-	width: 30%;
-	margin: 1%;
+	width: 20%;
+	margin: -0.25% 0 0.5% 1.5%;
 }
 
 .hamburger {
 	display: none;
+	width: 15%;
+	margin: 1.5% 5% 1% 1%;
 }
 
 nav {
-	float: right;
-	margin: 2.5% 0;
-	width: 60.5%;
-	padding-right: 3%;
-}
-
-nav p {
+	width: 77%;
 	display: inline-block;
-	padding: 1% 2%;
-	margin: 0;
-	font-size: 1.1em;
 }
 
 nav a {
-	color: #797979;
-}
-
-nav a:hover,
-nav a:active {
-	color: #800000;
-}
-
-#solution-ul {
 	display: inline-block;
-	font-size: 1.1em;
-	padding: 1% 2%;
+	float: right;
+	padding: 1% 2.5%;
 	margin: 0;
+	font-size: 1.4em;
+	font-family: 'Ubuntu', sans-serif;
+	color: #b30000;
+	font-weight: 900;
+	border-radius: 3%;
+}
+
+nav a:hover {
+	background-color: #b30000;
+	color: #efffff;
+	transition: 1s ease;
+	-webkit-transition: 1s ease;
+	-moz-transition: 1s ease;
+	-o-transition: 1s ease;
+}
+
+/*   ---    Banner   ---   */
+/*   ---    Banner   ---   */
+
+#banner p {
+	margin: 0;
+	padding: 1%;
+	text-align: center;
+	color: #f1f1f1;
+	font-size: 1.8em;
+	font-family: arial;
+}
+
+/*   ---    Slider   ---   */
+/*   ---    Slider   ---   */
+
+#slider-container {
+	width: 100%;
+	overflow: hidden;
+}
+
+#slider-controls img {
 
 }
 
+/*   ---    Responsive   ---   */
+/*   ---    Responsive   ---   */
 
 @media screen and (max-width: 740px) {
 	#logo {
@@ -80,19 +100,10 @@ nav a:active {
 	.hamburger {
 		display: inline-block;
 		float: right;
-		width: 20%;
+		height: 5%;
 	}
 
 	.hamburger:hover {
 		cursor: pointer;
 	}
-
-	.ham-line {
-		height: 2px;
-		width: 10px;
-		margin: 1px;
-		background: red;
-	}
-
-	#home main {
-	}
+}
